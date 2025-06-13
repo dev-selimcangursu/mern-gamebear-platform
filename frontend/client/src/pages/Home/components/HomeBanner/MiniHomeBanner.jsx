@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
-import styles from "./MiniBannerCard.module.css";
+import styles from "./MiniHomeBanner.module.css";
 
 function MiniBannerCard({ image, title, description }) {
   return (

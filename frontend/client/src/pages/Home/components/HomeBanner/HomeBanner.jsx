@@ -1,8 +1,11 @@
 import React from "react";
 import { Box } from "@mui/material";
-import MainBannerCard from "./MainBannerCard";
-import MiniBannerCard from "./MiniBannerCard";
+import MainBannerCard from "./MegaHomeBanner";
+import MiniBannerCard from "./MiniHomeBanner";
 import styles from "./HomeBanner.module.css";
+import HomeFeatured from "../HomeFeatured/HomeFeatured";
+import Banner2 from '../../../../assets/banner-2.png'
+import Banner4 from '../../../../assets/banner-4.png'
 
 function HomeBanner() {
   return (
@@ -11,17 +14,18 @@ function HomeBanner() {
         <MainBannerCard />
         <Box className={styles.rightColumn}>
           <MiniBannerCard
-            image="https://source.unsplash.com/random/300x200?console"
+            image={Banner2}
             title="Yeni Konsol"
             description="PS5 Pro şimdi stokta!"
           />
           <MiniBannerCard
-            image="https://source.unsplash.com/random/300x200?keyboard"
+            image={Banner4}
             title="Mekanik Klavye"
             description="RGB aydınlatmalı yeni seri"
           />
         </Box>
       </Box>
+      <HomeFeatured/>
     </Box>
   );
 }
