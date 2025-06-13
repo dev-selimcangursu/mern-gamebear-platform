@@ -1,7 +1,6 @@
 .footer {
   color: #333;
   padding: 3rem 1rem;
-  margin-top: 4rem;
 }
 
 .container {
@@ -49,6 +48,7 @@
   color: #333;
   cursor: pointer;
   transition: color 0.3s;
+  font-size: 11px !important;
 }
 
 .linkItem:hover {

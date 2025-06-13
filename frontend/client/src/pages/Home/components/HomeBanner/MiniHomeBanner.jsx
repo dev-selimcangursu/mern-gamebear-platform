@@ -1,22 +1,25 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Typography } from "@mui/material";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  CardActionArea
+} from "@mui/material";
 import styles from "./MiniHomeBanner.module.css";
 
-function MiniBannerCard({ image, title, description }) {
+function MiniBannerCard({ image, link }) {
   return (
     <Card className={styles.card}>
-      <CardMedia
-        component="img"
-        image={image}
-        alt={title}
-        className={styles.media}
-      />
-      <CardContent>
-        <Typography variant="h6">{title}</Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
+      <CardActionArea component="a" href={link}>
+        <CardMedia
+          component="img"
+          image={image}
+          alt={image}
+          className={styles.media}
+        />
+
+      </CardActionArea>
     </Card>
   );
 }

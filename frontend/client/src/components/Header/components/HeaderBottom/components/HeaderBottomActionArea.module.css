@@ -1,47 +1,55 @@
 .container {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 24px;
 }
-
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
 .whatsappLink {
-  display: flex !important;
+  display: flex;
   align-items: center !important;
-  color: #25d366 !important ;
+  gap: 2px;
   text-decoration: none !important;
+  color: #25d366 !important;
+  font-weight: 500;
   font-size: 12px !important;
-  gap: 4px !important;
-  transition: font-weight 0.2s ease !important;
+  transition: color 0.3s ease;
+  animation: blink 1.5s infinite;
+}
+.favoritesLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none !important;
+  color: #333 !important;
+  font-weight: 500;
+  font-size: 12px !important;
+  transition: color 0.3s ease;
 }
 
 .whatsappLink:hover {
-  font-weight: bold !important;
+   color: #0f7c37;
+  animation: none; 
 }
-
-.whatsappIcon {
-  font-size: 20px !important;
-}
-
-.whatsappText {
-  font-size: 12px !important;
-}
-
-.favoritesLink {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px !important;
-  text-decoration: none !important;
-  color: black !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  transition: color 0.3s ease !important;
-}
-
 .favoritesLink:hover {
   color: #ff5f1f !important;
 }
 
-.favoritesText {
-  font-size: 12px !important ;
+.whatsappIcon {
+  color: #25d366;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.linkText {
+  font-size: 14px !important;
 }

@@ -1,10 +1,17 @@
 .contactWrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+.contactWrapper:hover {
+  color: #ff5f1f !important;
+  cursor: pointer;
 }
 
 .captionText {
+  font-size: 12px !important;
   color: gray;
-  font-size: 11px;
 }

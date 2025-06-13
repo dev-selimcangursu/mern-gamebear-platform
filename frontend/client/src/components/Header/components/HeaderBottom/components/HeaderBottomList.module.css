@@ -1,9 +1,8 @@
 .list {
   display: flex;
-  flex-direction: row;
+  gap: 32px;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .listItem {
@@ -12,15 +11,29 @@
 
 .link {
   text-decoration: none !important;
-  color: black !important;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  cursor: pointer !important;
-  transition: color 0.3s ease !important;
+  color: #333 !important;
+  font-size: 15px !important;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap !important;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff5f1f;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
 
 .link:hover {
-  color: #ff5f1f !important;
+  color: #ff5f1f;
+}
+
+.link:hover::after {
+  width: 100%;
 }

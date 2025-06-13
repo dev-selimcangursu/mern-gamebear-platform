@@ -15,13 +15,13 @@ function HeaderBottomActionArea() {
         className={styles.whatsappLink}
       >
         <WhatsAppIcon className={styles.whatsappIcon} />
-        <Typography className={styles.whatsappText}>
-          WhatsApp'tan Bize Ulaşın
+        <Typography className={styles.linkText}>
+          WhatsApp Destek
         </Typography>
       </Link>
-      <Link href="#" className={styles.favoritesLink}>
-        <FavoriteIcon />
-        <Typography className={styles.favoritesText}>Favorilerim</Typography>
+      <Link href="/favorilerim" className={styles.favoritesLink}>
+        <FavoriteIcon className={styles.icon} />
+        <Typography className={styles.linkText}>Favorilerim</Typography>
       </Link>
     </Box>
   );

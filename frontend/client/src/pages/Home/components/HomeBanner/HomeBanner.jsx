@@ -15,13 +15,11 @@ function HomeBanner() {
         <Box className={styles.rightColumn}>
           <MiniBannerCard
             image={Banner2}
-            title="Yeni Konsol"
-            description="PS5 Pro şimdi stokta!"
+             link="/bilgisayar-monitorleri"
           />
           <MiniBannerCard
             image={Banner4}
-            title="Mekanik Klavye"
-            description="RGB aydınlatmalı yeni seri"
+             link="/oyun-konsol-aksesuarlari"
           />
         </Box>
       </Box>
