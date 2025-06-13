@@ -1,0 +1,12 @@
+.actionWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .actionWrapper {
+    display: none !important;
+  }
+}

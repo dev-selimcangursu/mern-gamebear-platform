@@ -1,0 +1,16 @@
+.shoppingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captionGray {
+  font-size: 11px;
+  color: gray;
+}

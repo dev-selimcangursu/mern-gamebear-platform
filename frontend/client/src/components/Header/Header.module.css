@@ -1,0 +1,5 @@
+.headerAppBar {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}

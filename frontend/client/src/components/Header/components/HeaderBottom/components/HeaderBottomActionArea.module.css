@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.whatsappLink {
+  display: flex !important;
+  align-items: center !important;
+  color: #25d366 !important ;
+  text-decoration: none !important;
+  font-size: 12px !important;
+  gap: 4px !important;
+  transition: font-weight 0.2s ease !important;
+}
+
+.whatsappLink:hover {
+  font-weight: bold !important;
+}
+
+.whatsappIcon {
+  font-size: 20px !important;
+}
+
+.whatsappText {
+  font-size: 12px !important;
+}
+
+.favoritesLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px !important;
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  transition: color 0.3s ease !important;
+}
+
+.favoritesLink:hover {
+  color: #ff5f1f !important;
+}
+
+.favoritesText {
+  font-size: 12px !important ;
+}

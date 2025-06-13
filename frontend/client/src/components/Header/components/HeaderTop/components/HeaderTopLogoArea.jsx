@@ -1,13 +1,14 @@
 import React from "react";
-import { Box, TextField } from "@mui/material";
+import { Box } from "@mui/material";
+import styles from "./HeaderTopLogoArea.module.css";
 
 function HeaderTopLogoArea() {
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box className={styles.logoWrapper}>
       <img
         src="/logo.png"
         alt="logo"
-        style={{ height: 50, objectFit: "contain" }}
+        className={styles.logoImage}
       />
     </Box>
   );

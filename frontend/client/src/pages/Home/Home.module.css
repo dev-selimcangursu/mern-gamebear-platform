@@ -1,0 +1,59 @@
+.section {
+  width: 100%;
+  margin-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 960px) {
+  .flexContainer {
+    flex-direction: row;
+  }
+}
+
+.mainCard {
+  flex: 2;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.cardContentOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.sideCards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.miniCard {
+  display: flex;
+  align-items: center;
+}
+
+.miniImage {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,31 +1,17 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
+import styles from "./HeaderTopLoginInfo.module.css";
 
 function HeaderTopLoginInfo() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        gap: 1,
-        justifyContent: "center",
-      }}
-    >
+    <Box className={styles.loginWrapper}>
       <PersonIcon />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography sx={{fontSize:"11px",color:"gray"}} variant="caption">Hesabım</Typography>
-        <Button
-          variant="outlined"
-          style={{ background: "orange", color: "black" }}
-          size="small"
-        >
+      <Box className={styles.loginInfoBox}>
+        <Typography className={styles.captionText} variant="caption">
+          Hesabım
+        </Typography>
+        <Button variant="contained" size="small" className={styles.loginButton}>
           Giriş Yap
         </Button>
       </Box>

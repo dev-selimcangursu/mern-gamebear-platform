@@ -1,28 +1,19 @@
 import React from "react";
 import { List, ListItem, Link } from "@mui/material";
+import styles from "./HeaderBottomList.module.css";
 
 function HeaderBottomList() {
+  const menuItems = [
+    { label: "Tüm Oyunlar", href: "#" },
+    { label: "İndirimli Oyunlar", href: "#" },
+    { label: "Elektronik Ürünler", href: "#" },
+  ];
+
   return (
-    <List sx={{ display: "flex", flexDirection: "row" }}>
-      {[
-        { label: "Tüm Oyunlar", href: "#" },
-        { label: "İndirimli Oyunlar", href: "#" },
-        { label: "Elektronik Ürünler", href: "#" },
-      ].map((item) => (
-        <ListItem key={item.label} disablePadding>
-          <Link
-            href={item.href}
-            sx={{
-              textDecoration: "none",
-              color: "black",
-              px: 1.5,
-              fontSize: "15px",
-              fontWeight: 500,
-              "&:hover": {
-                color: "orange",
-              },
-            }}
-          >
+    <List className={styles.list}>
+      {menuItems.map((item) => (
+        <ListItem key={item.label} disablePadding className={styles.listItem}>
+          <Link href={item.href} className={styles.link}>
             {item.label}
           </Link>
         </ListItem>

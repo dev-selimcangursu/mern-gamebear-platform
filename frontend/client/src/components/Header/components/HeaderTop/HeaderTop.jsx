@@ -5,6 +5,7 @@ import HeaderTopLogoArea from "./components/HeaderTopLogoArea";
 import HeaderTopActionArea from "./components/HeaderTopActionArea/HeaderTopAction";
 import MenuIcon from "@mui/icons-material/Menu";
 import Sidebar from "../../../Sidebar/Sidebar";
+import styles from "./HeaderTop.module.css";
 
 function HeaderTop() {
   const [openSidebarStatus, setOpenSidebarStatus] = useState(false);
@@ -14,25 +15,19 @@ function HeaderTop() {
   }
 
   return (
-    <Toolbar
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexWrap: "wrap",
-      }}
-    >
+    <Toolbar className={styles.toolbar}>
       <HeaderTopLogoArea />
       <HeaderTopSearchArea />
       <HeaderTopActionArea />
 
       <MenuIcon
         onClick={openSidebar}
-        sx={{
-          display: { xs: "flex", sm: "flex", md: "none" },
-          cursor: "pointer",
-        }}
+        className={styles.menuIcon}
       />
-      <Sidebar sidebarStatus={openSidebarStatus} setSidebarStatus={setOpenSidebarStatus} />
+      <Sidebar
+        sidebarStatus={openSidebarStatus}
+        setSidebarStatus={setOpenSidebarStatus}
+      />
     </Toolbar>
   );
 }

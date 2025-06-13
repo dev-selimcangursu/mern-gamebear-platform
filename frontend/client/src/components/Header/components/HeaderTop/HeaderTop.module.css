@@ -1,0 +1,17 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+.menuIcon {
+  display: none !important;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .menuIcon {
+    display: flex !important;
+  }
+}

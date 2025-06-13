@@ -1,0 +1,9 @@
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 50px;
+  object-fit: contain;
+}

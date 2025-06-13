@@ -2,15 +2,13 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import HeaderTop from "./components/HeaderTop/HeaderTop";
 import HeaderBottom from "./components/HeaderBottom/HeaderBottom";
+import styles from "./Header.module.css";
+
 function Header() {
   return (
-    <AppBar
-      position="static"
-      sx={{ background: "white", color: "black" }}
-      elevation={1}
-    >
+    <AppBar position="static" className={styles.headerAppBar} elevation={1}>
       <HeaderTop />
-      <HeaderBottom/>
+      <HeaderBottom />
     </AppBar>
   );
 }

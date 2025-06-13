@@ -68,7 +68,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: 70,
-            backgroundColor: 'orange',
+            backgroundColor: '#FF5F1F',
             color: '#fff',
             mb: 1
           }}
@@ -84,7 +84,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus }) {
           {menuItems.map(({ text, icon }) => (
             <ListItem key={text} disablePadding>
               <ListItemButton sx={{ "&:hover": { backgroundColor: "#f0f0f0" } }}>
-                <ListItemIcon sx={{ color: "orange" }}>{icon}</ListItemIcon>
+                <ListItemIcon sx={{  color: '#FF5F1F' }}>{icon}</ListItemIcon>
                 <ListItemText primary={text} sx={{ fontSize: "12px" }} />
               </ListItemButton>
             </ListItem>
@@ -109,7 +109,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus }) {
               sx={{
                 color: '#666',
                 '&:hover': {
-                  color: 'orange'
+                  color: '#FF5F1F'
                 }
               }}
             >

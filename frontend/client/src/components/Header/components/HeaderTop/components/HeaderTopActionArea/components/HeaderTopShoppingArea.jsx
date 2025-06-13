@@ -1,22 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import styles from "./HeaderTopShoppingArea.module.css";
 
 function HeaderTopShoppingArea() {
   return (
-    <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+    <Box className={styles.shoppingWrapper}>
       <ShoppingCartIcon />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography
-          sx={{ fontSize: "11px", color: "gray" }}
-          variant="caption"
-        >
+      <Box className={styles.textContainer}>
+        <Typography className={styles.captionGray} variant="caption">
           Sepetim
         </Typography>
         <Typography variant="caption">0 TL</Typography>

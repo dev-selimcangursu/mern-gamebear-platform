@@ -1,0 +1,28 @@
+.loginWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.loginInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captionText {
+  font-size: 11px;
+  color: gray;
+}
+
+.loginButton {
+  background-color: #ff5f1f !important;
+  padding: 4px 12px;
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.loginButton:hover {
+  background-color: #e0541a; 
+}

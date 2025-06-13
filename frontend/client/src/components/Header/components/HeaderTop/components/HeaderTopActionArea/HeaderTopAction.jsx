@@ -3,20 +3,11 @@ import { Box } from "@mui/material";
 import HeaderTopContactInfo from "./components/HeaderTopContactInfo";
 import HeaderTopLoginInfo from "./components/HeaderTopLoginInfo";
 import HeaderTopShoppingArea from "./components/HeaderTopShoppingArea";
+import styles from "./HeaderTopAction.module.css";
+
 function HeaderTopAction() {
   return (
-    <Box
-      sx={{
-        display: {
-          xs: "none",
-          sm: "none",
-          md: "flex",
-        },
-        alignItems: "center",
-        gap: 3,
-        flexWrap: "wrap",
-      }}
-    >
+    <Box className={styles.actionWrapper}>
       <HeaderTopContactInfo />
       <HeaderTopLoginInfo />
       <HeaderTopShoppingArea />

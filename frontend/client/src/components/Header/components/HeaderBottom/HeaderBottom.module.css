@@ -1,0 +1,16 @@
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    display: none !important;
+  }
+}

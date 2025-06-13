@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  margin-top: 32px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.bannerLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .bannerLayout {
+    flex-direction: row;
+  }
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

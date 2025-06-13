@@ -1,0 +1,10 @@
+.contactWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.captionText {
+  color: gray;
+  font-size: 11px;
+}

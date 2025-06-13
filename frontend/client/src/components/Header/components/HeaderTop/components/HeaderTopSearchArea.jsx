@@ -1,8 +1,10 @@
 import React from "react";
 import { Box, TextField } from "@mui/material";
+import styles from "./HeaderTopSearchArea.module.css";
+
 function HeaderTopSearchArea() {
   return (
-    <Box sx={{ flexGrow: 1, mx: 3 }}>
+    <Box className={styles.searchBox}>
       <TextField
         fullWidth
         placeholder="Ürün Ara"
